@@ -1,0 +1,19 @@
+Vinagre Installation Instructions
+=================================
+
+You need the devel packages of the following libraries:
+
+ - gtk+ >= 2.14
+ - glib >= 2.18
+ - libglade-2.0
+ - gconf-2.0
+ - gnome-keyring
+ - gtk-vnc widget >= 0.3.8 (http://sourceforge.net/projects/gtk-vnc)
+ - avahi-gobject and avahi-ui >= 0.6.22
+ - libpanelapplet-2.0 >= 2.0.0
+
+To compile it, just do:
+
+./configure [--prefix=/usr]
+make
+make install (as root, or with sudo)

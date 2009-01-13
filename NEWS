@@ -1,0 +1,402 @@
+Vinagre 2.25.4
+==============
+
+  Features
+
+	+ #558596: Added minimize button to toolbar in fullscreen mode. Thanks
+	to Vinicius Depizzol for his work on the icon.
+	+ Depends on gtk-vnc 0.3.8. This makes scaling work even on composited
+	screens.
+
+  Translations
+
+	+ Jorge González (es)
+	+ Mattias Põldaru (et)
+	+ Raivis Dejus (lv)
+	+ Kjartan Maraas (nb)
+	+ Taylon (pt_BR)
+
+
+Vinagre 2.25.3
+==============
+
+  Features
+
+	+ #509948: Added an 'original size' option in the view menu.
+	+ #557740: Make avahi optional again. Pass '--disable-avahi' to configure.
+	+ #559526: Allow username in the authentication schema.
+	+ #536896: Drag and drop ability: Bookmark can be added by dragging
+	and dropping an tab into it.
+	+ #549649: Folders in bookmarks.
+	+ New manual page, by Emilio Pozuelo Monfort and Halton Huo.
+	+ Added an initial preferences dialog.
+
+  Bugs
+
+	+ #554995: Create the parent directory before copying the old bookmarks
+	file to the new location.
+	+ #555803: Hides menu mnemonics.
+	+ #559525: Better parse a .vnc file.
+	+ #550596: Sort bookmarks alphabetically.
+	+ #562526: Make 'vinagre --help' fully localized.
+
+  Translations
+
+	+ Ihar Hrachyshka (be@latin)
+	+ nikosCharonitakis (el)
+	+ Jorge González (es)
+	+ Mattias Põldaru (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Mark Krapivner (he)
+	+ Vladimir Melo (pt_BR)
+
+
+Vinagre 2.24.0
+==============
+
+  Translations
+
+	+ Youssef Chahibi (ar)
+	+ Ask Hjorth Larsen (da)
+	+ Mario Blättermann (de)
+	+ Gabor Kelemen (hu)
+	+ Andrea Zagli (it)
+	+ Shankar Prasad (kn)
+	+ Changwoo Ryu (ko)
+	+ Gintautas Miliauskas (lt)
+	+ Manoj Kumar Giri (or)
+	+ Alexandre Prokoudine (ru)
+	+ Горан Ракић (sr)
+	+ Baris Cicek (tr)
+	+ Deng Xiyue (zh_CN)
+	+ Y.C.Liu (zh_HK)
+	+ Y.C.Liu (zh_TW)
+
+Vinagre 2.23.92
+===============
+  Fixes
+
+	+ Support down scaling, requires gtk-vnc 0.3.7
+
+  Translations
+
+	+ Alexander Shopov (bg)
+	+ Runa Bhattacharjee (bn_IN)
+	+ Joan Duran (ca)
+	+ nikosCharonitakis (el)
+	+ Philip Withnall (en_GB)
+	+ Takeshi AIHANA (ja)
+	+ പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ (ml)
+	+ Vincent van Adrighem (nl)
+	+ Dr.T.Vasudevan (ta)
+
+Vinagre 2.23.91
+===============
+  Fixes
+
+	+ Minor bug fixes
+
+  Translations
+
+	+ Joan Duran (ca, Documentation)
+	+ Mario Blättermann (de, UI and Documentation)
+	+ Jorge González (es)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Mark Krapivner (he)
+	+ Jovan Naumovski (mk)
+	+ Sandeep Shedmake (mr)
+	+ Vladimir Melo (pt_BR)
+	+ Daniel Nylander (sv)
+
+Vinagre 2.23.90
+===============
+  Fixes
+
+	+ Minor bug fixes
+
+  Translations
+
+	+ Youssef Chahibi (ar)
+	+ Alexander Shopov (bg)
+	+ Petr Kovar (cs)
+	+ Jorge González (es)
+	+ Priit Laes (et)
+	+ Ilkka Tuohela (fi)
+	+ Claude Paroz (fr)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Sweta Kothari (gu)
+	+ Mark Krapivner (he)
+	+ Kjartan Maraas (nb)
+	+ Yannig Marchegay (Kokoyaya) (oc)
+	+ Tomasz Dominikowski (pl)
+	+ Vladimir Melo (pt_BR)
+	+ Duarte Loreto (pt)
+	+ Matej Urbančič (sl)
+	+ Laurent Dhima (sq)
+	+ Theppitak Karoonboonyanan (th)
+
+Vinagre 2.23.4
+==============
+  Features
+
+	+ Added a panel applet
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Petr Kovar (cs)
+	+ Jorge González (es)
+	+ Ivar Smolin (et)
+	+ Frédéric Péters (fr)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Mark Krapivner (he)
+	+ Kjartan Maraas (nb)
+	+ Yannig Marchegay (Kokoyaya) (oc)
+	+ Clytie Siddall (vi)
+
+
+Vinagre 2.23.3.1
+================
+  Bugs
+
+	+ Bug #536330 - [build break] libview/autoDrawer.h: No such file or directory
+
+Vinagre 2.23.3
+==============
+  Features
+
+	+ Bug #522100 - Provide option to leave fullscreen mode. While in fullscreen
+	  mode, if you move the mouse to top of window, a toolbar appears.
+	+ Now we grab the keyboard automatically when the focus is on Vinagre
+	+ Added a gconf option to disable all menu shortcuts. This is useful if
+	  you want to get rid of having your key presses being intercepted by Vinagre.
+	+ Bug #515816 - Connect dialog should remember Host/Port address.
+	  Also reworked 'connect' and 'edit bookmark' dialogs, allowing you to
+	  provide some options to the connection, like scaling, fullscreen...
+	+ Bug #536111 - Store bookmarks file in XDG data dir (~/.local/share/vinagre).
+	  The old file is automatically copied to new location.
+
+  Bugs
+    + Bug #531969 - Fix scrolling.
+    + Ubuntu #233918 - Persist changes in menu shortcuts.
+
+  Translations
+	+ Djihed Afifi (ar)
+	+ Jorge González (es)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Mate Ory (hu)
+	+ Kjartan Maraas (nb)
+	+ Tino Meinen (nl)
+	+ Manoj Kumar Giri (or)
+
+Vinagre 2.23.2
+==============
+  Features
+
+	+ Bug #490841, Added "Send ctrl-alt-del" option to menu and toolbar (Henrik Holst).
+	+ Tell the server to share the connection with other clients (it can be
+	disabled through the gconf key "shared_flag").
+	+ Bug #530712, Initial support for VEncrypt sessions (Henrik Holst).
+	+ Bug #501165, Support for host::port command line syntax (Henrik Holst).
+	+ Bug #518351, Don't show tabs when only one connection is open. (you can
+	always show tabs with the gconf key "always_show_tabs".
+	+ Bug #519145, Added unique instance behavior. Added a new command line
+	option, "--new-window" if you want to use another vinagre window.
+	+ Depends on gtk-vnc 0.3.6.
+
+  Fixes
+
+	+ Bug #531593, don't distribute vinagre-enums.[hc].
+	+ Bug #530582, handles correctly the clipboard.
+
+  Translations
+
+	+ Jorge González (es)
+	+ Ivar Smolin (et)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Mark Krapivner (he)
+	+ Kjartan Maraas (nb)
+
+Vinagre 2.23.1
+==============
+  Features
+
+	+ Bug #476942, initial support to scaling, see README file for details.
+	+ Bug #512918, modified the side panel, to show avahi-discovered machines.
+	+ New debug stuff, added the command line option: --gtk-vnc-debug
+	+ Bug #509945, provides a 'read-only' mode.
+	+ Mandatory dependency on avahi >= 0.6.22
+
+  Fixes
+
+	+ Several minor fixes
+
+  Translations
+
+	+ Simos Xenitellis (el)
+	+ Jorge González (es)
+	+ Mark Krapivner (he)
+	+ Erdal Ronahi (ku)
+	+ Kjartan Maraas (nb)
+	+ Eskild Hustvedt (nn)
+	+ Amanpreet Singh Alam (pa)
+	+ Laurent Dhima (sq)
+	+ Daniel Nylander (sv)
+
+Vinagre 0.5
+===========
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Sankarshan Mukhopadhyay (bn_IN)
+	+ Ask Hjorth Larsen (da)
+	+ Philip Withnall (en_GB)
+	+ Jorge González (es)
+	+ Stéphane Raimbault (fr)
+	+ Rajesh Ranjan (hi)
+	+ Gabor Kelemen (hu)
+	+ Andrea Zagli (it)
+	+ Takeshi AIHANA (ja)
+	+ Changwoo Ryu (ko)
+	+ Gintautas Miliauskas (lt)
+	+ Arangel Angov (mk)
+	+ Ani Peter (ml)
+	+ Sandeep Shedmake (mr)
+	+ Daniel Nylander (sv)
+	+ I. Felix (ta)
+	+ Tolga Gunkut (tr)
+	+ Maxim Dziumanenko (uk)
+	+ Y.C.Liu (zh_HK)
+	+ Y.C.Liu (zh_TW)
+
+Vinagre 0.4.92 (0.5 Release Candidate)
+======================================
+
+  Fixes
+	+ Fix an inconsistency in menu sensitivity (Jonh Wendell).
+	+ Fix build in Solaris (Halton Huo)
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Joan Duran (ca)
+	+ Simos Xenitellis (el)
+	+ Jorge González (es)
+	+ Ilkka Tuohela (fi)
+	+ Claude Paroz (fr)
+	+ Nyitrai István (hu)
+	+ Wouter Bolsterlee (nl)
+	+ Filipe Gomes (pt)
+	+ Leonid Kanter (ru)
+	+ Matej Urbančič (sl)
+	+ Theppitak Karoonboonyanan (th)
+	+ Y.C.Liu (zh_HK)
+	+ Y.C.Liu (zh_TW)
+
+Vinagre 0.4.91 (0.5 beta 2)
+===========================
+
+  Features
+
+	+ Register ourself as handler for vnc:// protocol
+	+ Depends on gtk-vnc 0.3.3
+
+  Fixes
+	+ Allow port numbers less than 1024 (#513381).
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Ihar Hrachyshka (be@latin)
+	+ Petr Kovar (cs)
+	+ Andre Klapper (de)
+	+ Jorge González (es)
+	+ Ivar Smolin (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Kjartan Maraas (nb)
+	+ Tomasz Dominikowski (pl)
+	+ Og Maciel (pt_BR)
+	+ Daniel Nylander (sv)
+	+ Y.C.Liu (zh_HK)
+	+ Y.C.Liu (zh_TW)
+
+Vinagre 0.4.90 (0.5 beta 1)
+===========================
+
+  Features
+
+	+ Documentation (Jaap A. Haitsma and Vinicius Depizzol)
+	+ Man page (Emilio Pozuelo Monfort)
+	+ Make use of new gio instead of gnome-vfs
+	+ Depends on gtk-vnc 0.3.2
+
+  Fixes
+	+ Minor fixes
+
+  Translations
+
+	+ Ivar Smolin (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Yair Hershkovitz (he)
+	+ Namhyung Kim (ko)
+	+ Jovan Naumovski (mk)
+	+ Reinout van Schouwen (nl)
+	+ Yannig Marchegay (Kokoyaya) (oc)
+	+ Filipe Gomes (pt)
+	+ Leonid Kanter (ru)
+
+Vinagre 0.4
+===========
+
+  Features
+
+	+ Store vnc passwords in gnome-keyring
+	+ Support clipboard copy and paste
+	+ We have our own icon, thanks to Vinicius Depizzol
+	+ Basic support to open .vnc files
+	+ Keep track of recent connections (Menu Places->Recent Documents)
+	+ Lots of minor fixes
+	+ Depends on gtk-vnc 0.3
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Alexander Shopov (bg)
+	+ Joan Duran (ca)
+	+ Andre Klapper (de)
+	+ Jorge González (es)
+	+ Ilkka Tuohela (fi)
+	+ Claude Paroz (fr)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Gabor Kelemen (hu)
+	+ Andrea Zagli (it)
+	+ Kjartan Maraas (nb)
+	+ Reinout van Schouwen (nl)
+	+ Yannig Marchegay (Kokoyaya) (oc)
+	+ Vladimir Melo and Og Maciel (pt_BR)
+	+ W.H. Kalpa Pathum (si)
+	+ Matej Urbančič (sl)
+	+ Daniel Nylander (sv)
+
+Vinagre 0.3
+===========
+
+  Features
+
+    + Shows a message dialog when the connection is lost
+    + Added command line parsing, now you can call 'vinagre <host:port>'
+    + Added 'Take a Screenshot' feature
+    + Shows tooltips on statusbar
+    + Shows a error message when the auth fails
+    + Depends on gtk-vnc 0.2 (is this a feature? :))
+
+  Fixes
+
+    + A lot of small fixes
+
+Vinagre 0.2
+===========
+
+ - Initial public alpha quality release

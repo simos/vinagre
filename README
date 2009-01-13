@@ -1,0 +1,46 @@
+Vinagre 2.25.4
+===============
+
+This is vinagre, a VNC client for the GNOME Desktop.
+
+You can download or see more information about it on:
+   http://projects.gnome.org/vinagre/
+
+
+Installation
+============
+
+  - See the file 'INSTALL'
+
+
+What's New?
+===========
+
+  - See the file 'NEWS'
+
+
+Who is behind Vinagre?
+======================
+
+  - See the file 'AUTHORS'
+
+
+Enabling scaling
+================
+
+ - Current version (2.25 an up):
+  Scaling should be working out-of-the-box, as it relies on cairo, and cairo
+  is present on most platforms. Note that gtk-vnc >= 0.3.8 is required.
+
+ - Older versions (2.24 and earlier):
+  In order to enable scaling in Vinagre, gtk-vnc widget must have been
+  compiled with this feature enabled. Just build gtk-vnc with the flag
+  '--with-gtkglext=yes', in the configure stage.
+
+Bookmarks
+=========
+
+  - In Vinagre 2.23.3 we have moved the bookmarks file location from ~/.gnome2
+  to ~/.local/share/vinagre, which is the recommended place for data files.
+  The change should be transparent, i.e., we automatically copy the old file
+  to the new place if we detect that new file does not exist yet.

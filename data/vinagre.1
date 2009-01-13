@@ -1,0 +1,89 @@
+.TH VINAGRE "1" "November 23rd 2008" "User Commands"
+.SH "NAME"
+vinagre \- a VNC client for the GNOME Desktop
+.SH "SYNOPSYS"
+.PP
+\fBvinagre\fR [\fBOPTIONS\fR] [\fB\fIserver\fR[:\fIport\fR]\fR]
+.SH "DESCRIPTION"
+.PP
+\fBvinagre\fR is a VNC client for the GNOME desktop, featuring, among others:\&.
+.PP
+- Support for multiple connections simultaneously
+.PP
+- Bookmarks and history support
+.PP
+- Avahi integration
+.PP
+- GNOME keyring integration
+.PP
+- GNOME panel applet to quickly launch vinagre to access VNC servers
+.PP
+- You can connect to a VNC server by double clicking on a \&.vnc file when using nautilus\&.
+.SH "OPTIONS"
+.SS "Help Options:"
+.TP
+\-?, \fB\-\-help\fR
+Show help options
+.TP
+\fB\-\-help\-all\fR
+Show all help options
+.TP
+\fB\-\-help\-gtk\fR
+Show GTK+ Options
+.SS "Application Options:"
+.TP
+\fB\-\-gtk\-vnc\-debug\fR
+Enables debug output
+.TP
+\fB\-f\fR, \fB\-\-file\fR=\fIfilename\fR
+Opens a .vnc file
+.TP
+\-n, \fB\-\-new\-window\fR
+Create a new toplevel window in an existing instance of vinagre
+.TP
+\fB\-\-display\fR=\fIDISPLAY\fR
+X display to use
+.PP
+Run 'vinagre \fB\-\-help\fR' to see a full list of available command line options
+.SH "OPERANDS"
+.PP
+The following operands are supported:
+.TP
+\fB\fB\fIserver\fR[:\fIport\fR]\fR\fR
+Specifies the VNC server to connect with\&. The VNC server name or IP address is followed by a colon (:) character, and then followed by the VNC port number\&. The port specification is optional\&. If it is not specified, default value of 5900 will be used\&. If the value is lower than 1024, it will add 5900\&. For example, ":0" means "5900" and ":1" means ":5901"\&.
+.SH "EXAMPLES"
+.PP
+\fBExample 1: Start vinagre from the command line\fR
+.PP
+.PP
+.nf
+example% \fBvinagre\fR
+.fi
+.PP
+\fBExample 2: Create a new top-level window\fR
+.PP
+.PP
+.nf
+example% \fBvinagre --new-window\fR
+.fi
+.PP
+\fBExample 3: Connect to a specified VNC server and port\fR
+.PP
+.PP
+.nf
+example% \fBvinagre snoopy:5900\fR
+.fi
+.PP
+\fBExample 4: Connect to a VNC server specified by a \&.vnc file\fR
+.PP
+.PP
+.nf
+example% \fBvinagre -f snoopy\&.vnc\fR
+.fi
+.SH "SEE ALSO"
+.PP
+Vinagre help manual
+.SH "AUTHOR"
+Vinagre was written by Jonh Wendell <wendell@bani.com.br>
+.TP
+This manual page was written by Emilio Pozuelo Monfort <pochu@ubuntu.com> and Halton Huo <halton.huo@sun.com>.

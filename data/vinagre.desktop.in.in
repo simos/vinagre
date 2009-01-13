@@ -1,0 +1,14 @@
+[Desktop Entry]
+_Name=Remote Desktop Viewer
+_Comment=Access remote desktops
+Exec=vinagre %U
+Icon=vinagre
+Terminal=false
+MimeType=application/x-remote-connection;
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Network;RemoteAccess;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=vinagre
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=@VERSION@

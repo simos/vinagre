@@ -1,0 +1,4 @@
+data/vinagre.desktop.in
+data/vinagre-file.desktop.in
+data/vinagre-mime.xml.in
+src/GNOME_VinagreApplet.server.in

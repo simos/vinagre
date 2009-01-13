@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+    "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY GFDL  SYSTEM "fdl-appendix.xml">
+  <!ENTITY app "Vinagre">
+  <!ENTITY application "<application>&app;</application>">
+  <!ENTITY appversion "0.4">
+  <!ENTITY manrevision "0.4">
+]>
+<!--
+      (Do not remove this comment block.)
+  Template Maintained by the GNOME Documentation Project:
+	  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+
+  <articleinfo>
+    <title>&application; Manual</title>
+    <abstract role="description">
+      <para>
+        &application; is a Remote Desktop Viewer
+      </para>
+    </abstract>
+    <copyright>
+      <year>2007, 2008</year>
+      <holder>Jonh Wendell (wendell@bani.com.br)</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2006</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher role="maintainer">
+      <publishername>Jonh Wendell</publishername>
+    </publisher>
+
+   &legal;
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Vinicius</firstname>
+        <surname>Depizzol</surname>
+				<email>vdepizzol@gmail.com</email>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision>
+        <revnumber>0.2</revnumber>
+        <date>2008-01-15</date>
+        <revdescription>
+          <para role="author">Vinicius Depizzol
+            <email>vdepizzol@gmail.com</email>
+          </para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.1</revnumber>
+        <date>2007-12-16</date>
+        <revdescription>
+          <para role="author">Jaap A. Haitsma
+            <email>jaap@haitsma.org</email>
+          </para>
+          <para role="publisher">Jaap A. Haitsma</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <legalnotice>
+      <title>Feedback</title>
+      <para>
+        To report a bug or make a suggestion regarding the &app; application or
+        this manual, follow the directions in the 
+        <ulink url="http://www.gnome.org/projects/vinagre/"
+	  type="http">&application; Contact Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>&application;</primary>
+  </indexterm>
+  <indexterm zone="index">
+    <primary>remote desktop</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<section id="intro">
+  <title>Introduction</title>
+  <!-- manrevision 2.0 compatibility -->
+  <anchor id="aboutex"/>
+  <anchor id="notice"/>
+  <indexterm>
+    <primary>&application;</primary>
+    <secondary>Manual</secondary>
+    <tertiary>vinagre</tertiary>
+  </indexterm>
+
+  <para>The &app; application is a Remote Desktop Viewer for the <systemitem>GNOME desktop</systemitem> that uses Virtual Network Computing (VNC) system to remotely control another computer.</para>
+  <para><application>&app;</application> provides the following features:</para>
+  <itemizedlist>
+  	<listitem>
+  		<para>Connect to several machines at the same time.</para>
+  	</listitem>
+  	<listitem>
+  		<para>Store recently connections and allows to bookmark them.</para>
+  	</listitem>
+  	<listitem>
+  		<para>Browse local network for VNC Servers.</para>
+  	</listitem>
+  </itemizedlist>
+
+</section>
+
+<!-- ============= Getting Started =========================== -->
+<section id="getting-started">
+	<title>Getting Started</title>
+
+<!-- ============= To Start vinagre ========================== -->
+
+	<section id="to-start">
+		<title>Starting &app;</title>
+		<para>You can start <application>&app;</application> in the following ways:</para>
+		<variablelist>
+				<varlistentry>
+				<term><guimenu>Applications</guimenu> menu</term>
+				<listitem>
+	    	<para>Choose <menuchoice><guisubmenu>Internet</guisubmenu><guimenuitem>Remote Desktop Viewer</guimenuitem></menuchoice>. </para>
+				</listitem>
+				</varlistentry>
+				<varlistentry>
+				<term>Command line</term>
+    		<listitem>
+    		<para>Execute the following command: <command>vinagre</command></para>
+    		</listitem>
+    		</varlistentry>
+		</variablelist>
+	</section>
+	
+	<section id="the-window">
+		<title>The &app; Window</title>
+		<figure id="vinagre-window">
+			<title>&app; window</title>
+		  <screenshot>
+			 <mediaobject>
+				<imageobject>
+				  <imagedata fileref="figures/vinagre-screenshot.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows vinagre main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+		
+		<para>The <application>&app;</application> window contains the following
+			elements:</para>
+		
+		<variablelist>
+			<varlistentry>
+				<term>Menubar</term>
+				<listitem>
+					<para>The menus on the menubar contain all of the commands you need to work with remote connections in <application>&app;</application>.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Toolbar</term>
+				<listitem>
+					<para>The toolbar contains a subset of the most used commands that you can access from the menubar.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Display Area</term>
+				<listitem>
+					<para>The display area contains a list of tabs with the connected machines and its remote desktops.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Statusbar</term>
+				<listitem>
+					<para>The statusbar displays information about current <application>&app;</application> activity and contextual information about the menu items.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Side Pane</term>
+				<listitem>
+					<para>The side pane contains a list of bookmarked connections.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</section>
+
+</section>
+
+<section id="using">
+  <title>Using &app;</title>
+  
+  <section id="connect">
+  	<title>To connect with a remote machine</title>
+  
+	  <section id="connect-informing-data">
+	  	<title>Informing Host address</title>
+	  	<para>To connect with a remote machine, choose 
+		  	<menuchoice>
+		  		<shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo></shortcut>
+		  		<guimenu>Machine</guimenu>
+		  		<guimenuitem>Connect</guimenuitem>
+		  	</menuchoice>. The <guilabel>Connection Dialog</guilabel> is displayed. 
+		  	Inform the <guilabel>Host</guilabel> and the <guilabel>Port</guilabel> of 
+		  	the connection and click the <guibutton>Connect</guibutton> button. You can 
+		  	also use the <guibutton>Find</guibutton> button to browse available machines on local network.
+		  </para>
+		  <note>
+		  	<para>
+			  	Some machines may require a secure connection. In this case, a 
+			  	<guilabel>Password</guilabel> dialog will be displayed asking for the connection password. 
+			  	If you check <guilabel>Remember this password</guilabel>, <application>&app;</application> will store 
+			  	the secure information using <application>GNOME Keyring Manager</application>.
+		  	</para>
+		  </note>
+		  <para>
+		  	If the connection has been used previously, you can also access it by 
+		  	<menuchoice>
+		  		<guimenu>Machine</guimenu>
+		  		<guimenu>Recent connections...</guimenu>
+		  	</menuchoice>.
+		  </para>
+	  </section>
+	  
+	  <section id="connect-opening-file">
+	  	<title>Opening a Remote Connection File</title>
+	  	<para>Some hosts distribute remote connection files (generally ending with 
+	  		suffix &quot;.vnc&quot;) instead of inform Host address and Port. To open a
+	  		remote connection file, choose 
+	  		<menuchoice>
+	  			<shortcut><keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo></shortcut>
+	  			<guimenu>Machine</guimenu>
+	  			<guimenuitem>Open</guimenuitem>
+	  		</menuchoice>. The <guilabel>Select File</guilabel> dialog is displayed. 
+	  		Select the file you want to open, then click on the <guibutton>Open</guibutton> button.
+	  	</para>
+	  	
+	  	<tip>
+	  		<para>You can also double-click on a remote connection file in the <application>Nautilus</application> 
+	  		file manager to open it on the <application>&app;</application> window.
+	  		</para>
+	  	</tip>
+	  </section>
+	</section>
+	
+	<section id="bookmark-add">
+		<title>To Create a New Bookmark</title>
+		<para>To bookmark the currently viewed connection, choose 
+			<menuchoice>
+				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>D</keycap></keycombo></shortcut>
+				<guimenu>Bookmarks</guimenu>
+				<guimenuitem>Add to Bookmarks</guimenuitem>
+			</menuchoice>. The <guilabel>Saving to Bookmarks</guilabel> dialog is displayed. 
+			Inform the name of the connection and click <guibutton>Ok</guibutton>.
+		</para>
+	</section>
+	
+	<section id="bookmark-remove">
+		<title>To Remove a Bookmark</title>
+		<para>
+			To remove a bookmark, choose <guimenuitem>Remove</guimenuitem> from the context menu 
+			of the bookmark in the Side Pane.
+		</para>
+	</section>
+	
+	<section id="bookmark-edit">
+		<title>To Edit a Bookmark's Properties</title>
+		<para>
+			To edit a bookmark's properties, such as it's name and host, choose <guimenuitem>Edit</guimenuitem> 
+			from the context menu of the bookmark in the Side Pane.
+		</para>
+	</section>
+	
+	<section id="fullscreen">
+	  <title>To Use Full Screen Mode</title>
+	  <para>To zoom the Display Area to full screen mode, choose 
+		  <menuchoice>
+			  <shortcut><keycap>F11</keycap></shortcut>
+			  <guimenu>View</guimenu>
+			  <guimenuitem>Full Screen</guimenuitem>
+		  </menuchoice>. To exit full screen mode, press <keycap>F11</keycap>
+		   or <keycombo><keycap>Ctrl</keycap><keycap>Alt</keycap></keycombo>.
+	  </para>
+	</section>
+	 
+	<section id="close">
+		<title>To Close a Connection</title>
+		<para>To close a connection, choose 
+		<menuchoice>
+			<guimenu>Machine</guimenu>
+			<guimenuitem>Close</guimenuitem>
+		</menuchoice>.
+		</para>
+	</section>
+	
+	<section id="screenshot">
+		<title>To Take Screenshot</title>
+		<para>To take screenshot of the current remote desktop, choose 
+			<menuchoice>
+				<guimenu>Machine</guimenu>
+				<guimenu>Take Screenshot</guimenu>
+			</menuchoice> or press the relative button in the toolbar. The 
+			<guilabel>Save Screenshot</guilabel> dialog is displayed, click the 
+			<guibutton>Save</guibutton> button to save the screenshot.
+		</para>
+	</section>
+
+</section>
+
+
+<section id="about">
+  <title>About</title>
+  <para>
+    &app; was written by Jonh Wendell <email>wendell@bani.com.br</email>.
+    To find more information about &app;, please visit the
+    <ulink url="http://www.gnome.org/projects/vinagre" type="http">
+    &application; web page</ulink>.
+  </para>
+  <para>
+    To report a bug or make a suggestion regarding this application you can file
+    a bug in our 
+    <ulink url="http://bugzilla.gnome.org/browse.cgi?product=vinagre" type="http">
+    bug tracker</ulink>.
+  </para>
+  <para>This program is distributed under the terms of the GNU
+    General Public license as published by the Free Software
+    Foundation; either version 2 of the License, or (at your option)
+    any later version. A copy of this license can be found at the
+    <ulink url="http://www.gnu.org/licenses/gpl.html" type="http">GNU site</ulink>, or in the file
+    COPYING included with the source code of this program.
+  </para>
+</section>
+
+</article>
