@@ -1,0 +1,3 @@
+[submodule "l10n"]
+	path = l10n
+	url = git://github.com/simos/l10n.git
